@@ -1,0 +1,600 @@
+INFO 2025-10-03 19:01:57,958 autoreload 15480 17784 Watching for file changes with StatReloader
+INFO 2025-10-03 19:09:45,534 autoreload 28048 24468 Watching for file changes with StatReloader
+INFO 2025-10-03 19:17:21,928 autoreload 11716 22064 Watching for file changes with StatReloader
+INFO 2025-10-03 19:18:22,658 autoreload 8476 15328 Watching for file changes with StatReloader
+INFO 2025-10-03 19:19:17,221 autoreload 8476 15328 D:\Crack_It_1\core\admin.py changed, reloading.
+INFO 2025-10-03 19:19:17,744 autoreload 9724 28412 Watching for file changes with StatReloader
+INFO 2025-10-03 19:19:38,376 autoreload 9724 28412 D:\Crack_It_1\core\admin.py changed, reloading.
+INFO 2025-10-03 19:19:38,873 autoreload 20412 22852 Watching for file changes with StatReloader
+INFO 2025-10-03 19:19:41,665 autoreload 5148 22016 Watching for file changes with StatReloader
+INFO 2025-10-03 19:22:43,196 autoreload 5148 22016 D:\Crack_It_1\core\models.py changed, reloading.
+INFO 2025-10-03 19:22:43,693 autoreload 11604 7260 Watching for file changes with StatReloader
+INFO 2025-10-03 19:22:53,230 autoreload 11604 7260 D:\Crack_It_1\core\serializers.py changed, reloading.
+INFO 2025-10-03 19:22:53,750 autoreload 25232 11756 Watching for file changes with StatReloader
+INFO 2025-10-03 19:23:02,155 autoreload 25232 11756 D:\Crack_It_1\core\serializers.py changed, reloading.
+INFO 2025-10-03 19:23:02,708 autoreload 15072 19360 Watching for file changes with StatReloader
+INFO 2025-10-03 19:23:19,307 autoreload 15072 19360 D:\Crack_It_1\core\views_ai.py changed, reloading.
+INFO 2025-10-03 19:23:19,865 autoreload 28196 20640 Watching for file changes with StatReloader
+INFO 2025-10-03 19:23:35,538 autoreload 28196 20640 D:\Crack_It_1\core\views.py changed, reloading.
+INFO 2025-10-03 19:23:36,050 autoreload 24800 2428 Watching for file changes with StatReloader
+INFO 2025-10-03 19:23:41,720 autoreload 14136 12308 Watching for file changes with StatReloader
+INFO 2025-10-03 19:24:10,724 autoreload 14136 12308 D:\Crack_It_1\core\migrations\0005_alter_formula_subject.py changed, reloading.
+INFO 2025-10-03 19:24:11,275 autoreload 19956 7496 Watching for file changes with StatReloader
+INFO 2025-10-03 19:25:10,838 autoreload 26924 6680 Watching for file changes with StatReloader
+INFO 2025-10-03 19:26:40,456 autoreload 26924 6680 D:\Crack_It_1\core\migrations\0003_alter_interviewquestion_department.py changed, reloading.
+INFO 2025-10-03 19:26:40,947 autoreload 12972 27004 Watching for file changes with StatReloader
+INFO 2025-10-03 19:27:15,176 autoreload 12972 27004 D:\Crack_It_1\core\migrations\0007_alter_dailyquizattempt_options_and_more.py changed, reloading.
+INFO 2025-10-03 19:27:15,705 autoreload 24512 27544 Watching for file changes with StatReloader
+INFO 2025-10-03 19:27:42,750 autoreload 24512 27544 D:\Crack_It_1\core\migrations\0009_alter_dailyquiz_options_and_more.py changed, reloading.
+INFO 2025-10-03 19:27:43,314 autoreload 6172 9632 Watching for file changes with StatReloader
+INFO 2025-10-03 19:27:47,463 autoreload 6172 9632 D:\Crack_It_1\core\migrations\0009_alter_dailyquiz_options_and_more.py changed, reloading.
+INFO 2025-10-03 19:27:48,004 autoreload 3300 28364 Watching for file changes with StatReloader
+INFO 2025-10-03 19:28:02,925 autoreload 6648 9024 Watching for file changes with StatReloader
+INFO 2025-10-03 19:28:06,785 basehttp 6648 1080 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-03 19:28:07,750 log 6648 18236 Not Found: /favicon.ico
+WARNING 2025-10-03 19:28:07,751 basehttp 6648 18236 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-03 19:28:10,083 basehttp 6648 18800 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-03 19:28:10,107 log 6648 18800 Not Found: /css/styles.css
+WARNING 2025-10-03 19:28:10,108 basehttp 6648 18800 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:28:12,124 basehttp 6648 18800 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-03 19:28:13,344 basehttp 6648 18800 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 19:28:14,956 basehttp 6648 18800 "GET /syllabus.html HTTP/1.1" 200 20292
+WARNING 2025-10-03 19:28:14,983 log 6648 18800 Not Found: /css/styles.css
+WARNING 2025-10-03 19:28:14,984 basehttp 6648 18800 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:28:15,016 basehttp 6648 18800 "GET /api/syllabus/ HTTP/1.1" 200 22142
+INFO 2025-10-03 19:28:16,215 basehttp 6648 18800 "GET /mocktest.html HTTP/1.1" 200 27476
+WARNING 2025-10-03 19:28:16,239 log 6648 18800 Not Found: /css/styles.css
+WARNING 2025-10-03 19:28:16,241 basehttp 6648 18800 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:28:16,263 basehttp 6648 18800 "GET /api/mock-tests/ HTTP/1.1" 200 77
+INFO 2025-10-03 19:28:16,843 basehttp 6648 18800 "GET /results.html HTTP/1.1" 200 22128
+WARNING 2025-10-03 19:28:16,875 log 6648 18800 Not Found: /css/styles.css
+WARNING 2025-10-03 19:28:16,875 basehttp 6648 18800 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:28:16,921 basehttp 6648 18800 "GET /api/user/test-attempts/ HTTP/1.1" 200 4913
+INFO 2025-10-03 19:30:15,208 basehttp 6648 18800 "GET /api/user/test-attempts/8/details/ HTTP/1.1" 200 13993
+INFO 2025-10-03 19:30:17,705 basehttp 6648 18800 "GET /previouspaper.html HTTP/1.1" 200 17361
+WARNING 2025-10-03 19:30:17,734 log 6648 18800 Not Found: /css/styles.css
+WARNING 2025-10-03 19:30:17,734 basehttp 6648 18800 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:30:17,759 basehttp 6648 18800 "GET /api/previous-papers/ HTTP/1.1" 200 3182
+INFO 2025-10-03 19:30:19,349 basehttp 6648 18800 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 19:30:19,373 log 6648 18800 Not Found: /css/styles.css
+WARNING 2025-10-03 19:30:19,374 basehttp 6648 18800 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:30:19,401 basehttp 6648 18800 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-03 19:30:20,280 basehttp 6648 18800 "GET /dailyquiz.html HTTP/1.1" 200 32741
+INFO 2025-10-03 19:30:20,397 basehttp 6648 18800 "GET /static/css/styles.css HTTP/1.1" 200 332
+INFO 2025-10-03 19:30:21,321 basehttp 6648 18800 "GET /interview.html HTTP/1.1" 200 19085
+INFO 2025-10-03 19:30:21,376 basehttp 6648 18800 "GET /api/interview-questions/ HTTP/1.1" 200 60486
+INFO 2025-10-03 19:30:22,066 basehttp 6648 18800 "GET /formula.html HTTP/1.1" 200 76456
+WARNING 2025-10-03 19:30:22,085 basehttp 6648 18800 "GET /static/js/formula.js HTTP/1.1" 404 1853
+INFO 2025-10-03 19:30:22,939 basehttp 6648 21288 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-03 19:30:22,980 basehttp 6648 21288 "GET /api/ai-chat-history/ HTTP/1.1" 200 708
+INFO 2025-10-03 19:30:27,491 basehttp 6648 21288 "GET /admin/ HTTP/1.1" 200 16569
+INFO 2025-10-03 19:30:27,508 basehttp 6648 21288 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-10-03 19:30:27,510 basehttp 6648 15876 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-10-03 19:30:27,510 basehttp 6648 17512 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-10-03 19:30:27,537 basehttp 6648 15876 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-10-03 19:30:27,538 basehttp 6648 17512 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-10-03 19:30:27,538 basehttp 6648 21288 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-10-03 19:30:27,539 basehttp 6648 23708 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-10-03 19:30:27,548 basehttp 6648 15876 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2025-10-03 19:30:27,549 basehttp 6648 23708 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-10-03 19:30:27,549 basehttp 6648 17512 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2025-10-03 19:30:27,550 basehttp 6648 21288 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-10-03 19:30:32,155 basehttp 6648 21288 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 15865
+INFO 2025-10-03 19:30:32,174 basehttp 6648 21288 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-10-03 19:30:32,182 basehttp 6648 23708 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-10-03 19:30:32,183 basehttp 6648 15876 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-10-03 19:30:32,187 basehttp 6648 2540 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-10-03 19:30:32,187 basehttp 6648 21288 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-10-03 19:30:32,191 basehttp 6648 23708 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-10-03 19:30:32,191 basehttp 6648 15876 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-10-03 19:30:32,195 basehttp 6648 21288 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-10-03 19:30:32,197 basehttp 6648 15876 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-10-03 19:30:32,199 basehttp 6648 20616 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:30:32,201 basehttp 6648 17512 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-10-03 19:30:32,203 basehttp 6648 2540 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-10-03 19:30:32,207 basehttp 6648 2540 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-10-03 19:30:32,226 basehttp 6648 2540 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-10-03 19:30:32,226 basehttp 6648 17512 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-10-03 19:30:33,469 basehttp 6648 17512 "GET /admin/core/dailyquiz/23/change/ HTTP/1.1" 200 18010
+INFO 2025-10-03 19:30:33,488 basehttp 6648 2540 "GET /static/admin/css/forms.css HTTP/1.1" 200 8525
+INFO 2025-10-03 19:30:33,490 basehttp 6648 21288 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-10-03 19:30:33,491 basehttp 6648 20616 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-10-03 19:30:33,491 basehttp 6648 15876 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-10-03 19:30:33,496 basehttp 6648 21288 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11973
+INFO 2025-10-03 19:30:33,498 basehttp 6648 17512 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:30:33,500 basehttp 6648 21288 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2025-10-03 19:30:33,528 basehttp 6648 21288 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-10-03 19:30:35,137 basehttp 6648 21288 "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 2455
+INFO 2025-10-03 19:30:40,143 basehttp 6648 21288 "POST /admin/core/dailyquiz/23/change/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:30:40,182 basehttp 6648 21288 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 16100
+INFO 2025-10-03 19:30:40,201 basehttp 6648 17512 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-10-03 19:30:40,210 basehttp 6648 21288 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:30:42,927 basehttp 6648 21288 "GET /admin/core/dailyquiz/23/change/ HTTP/1.1" 200 18010
+INFO 2025-10-03 19:30:43,386 basehttp 6648 21288 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 15860
+INFO 2025-10-03 19:30:44,147 basehttp 6648 21288 "GET /admin/core/dailyquiz/23/change/ HTTP/1.1" 200 18010
+INFO 2025-10-03 19:30:44,673 basehttp 6648 21288 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 15860
+INFO 2025-10-03 19:30:44,825 basehttp 6648 21288 "GET /admin/ HTTP/1.1" 200 16545
+INFO 2025-10-03 19:30:46,671 basehttp 6648 21288 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-03 19:30:46,696 basehttp 6648 21288 "GET /api/ai-chat-history/ HTTP/1.1" 200 708
+INFO 2025-10-03 19:30:47,523 basehttp 6648 21288 "GET /dailyquiz.html HTTP/1.1" 200 33836
+INFO 2025-10-03 19:30:51,079 basehttp 6648 21288 "POST /submit-daily-quiz/ HTTP/1.1" 200 111
+INFO 2025-10-03 19:30:53,729 basehttp 6648 21288 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 19:30:53,757 log 6648 21288 Not Found: /css/styles.css
+WARNING 2025-10-03 19:30:53,758 basehttp 6648 21288 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:30:53,782 basehttp 6648 21288 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-03 19:30:54,357 basehttp 6648 21288 "GET /dailyquiz.html HTTP/1.1" 200 34548
+INFO 2025-10-03 19:32:42,295 autoreload 6680 15072 Watching for file changes with StatReloader
+INFO 2025-10-03 19:36:37,583 autoreload 26680 21732 Watching for file changes with StatReloader
+INFO 2025-10-03 19:36:41,118 basehttp 26680 14168 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-03 19:36:41,326 log 26680 14168 Not Found: /favicon.ico
+WARNING 2025-10-03 19:36:41,327 basehttp 26680 14168 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-03 19:37:27,820 basehttp 26680 24600 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-03 19:37:27,848 log 26680 24600 Not Found: /css/styles.css
+WARNING 2025-10-03 19:37:27,849 basehttp 26680 24600 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:37:32,149 basehttp 26680 24600 "GET /admin/ HTTP/1.1" 200 16545
+INFO 2025-10-03 19:37:32,171 basehttp 26680 24600 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,178 basehttp 26680 24600 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,180 basehttp 26680 11612 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,180 basehttp 26680 13548 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,182 basehttp 26680 27988 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,183 basehttp 26680 24756 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,187 basehttp 26680 24756 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,196 basehttp 26680 11612 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,196 basehttp 26680 24756 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,196 basehttp 26680 13548 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:32,197 basehttp 26680 27988 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,575 basehttp 26680 27988 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 15860
+INFO 2025-10-03 19:37:53,588 basehttp 26680 27988 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,597 basehttp 26680 13548 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,597 basehttp 26680 24756 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,597 basehttp 26680 11612 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,601 basehttp 26680 24600 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,602 basehttp 26680 19604 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,603 basehttp 26680 13548 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,605 basehttp 26680 24756 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,605 basehttp 26680 11612 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,608 basehttp 26680 24600 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,609 basehttp 26680 19604 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,612 basehttp 26680 19604 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,614 basehttp 26680 27988 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:37:53,630 basehttp 26680 27988 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:53,630 basehttp 26680 19604 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:37:55,959 basehttp 26680 19604 "GET /admin/ HTTP/1.1" 200 16545
+INFO 2025-10-03 19:37:56,924 basehttp 26680 19604 "GET /admin/core/dailyquizattempt/ HTTP/1.1" 200 16684
+INFO 2025-10-03 19:37:56,950 basehttp 26680 19604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:38:03,047 basehttp 26680 19604 "POST /admin/core/dailyquizattempt/ HTTP/1.1" 200 12654
+INFO 2025-10-03 19:38:03,148 basehttp 26680 19604 "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+INFO 2025-10-03 19:38:04,271 basehttp 26680 19604 "POST /admin/core/dailyquizattempt/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:38:04,304 basehttp 26680 19604 "GET /admin/core/dailyquizattempt/ HTTP/1.1" 200 13639
+INFO 2025-10-03 19:38:04,327 basehttp 26680 19604 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:38:06,409 basehttp 26680 19604 "GET /admin/ HTTP/1.1" 200 16312
+INFO 2025-10-03 19:39:24,367 basehttp 26680 792 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 15860
+INFO 2025-10-03 19:39:24,403 basehttp 26680 792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:39:30,319 basehttp 26680 792 "POST /admin/core/dailyquiz/ HTTP/1.1" 200 12274
+INFO 2025-10-03 19:39:31,613 basehttp 26680 792 "POST /admin/core/dailyquiz/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:39:31,640 basehttp 26680 792 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 13670
+INFO 2025-10-03 19:39:31,665 basehttp 26680 792 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:39:33,333 basehttp 26680 792 "GET /admin/core/dailyquiz/add/ HTTP/1.1" 200 17655
+INFO 2025-10-03 19:39:33,351 basehttp 26680 792 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:39:33,352 basehttp 26680 18304 "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:39:33,353 basehttp 26680 5620 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:39:33,354 basehttp 26680 17228 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:39:33,355 basehttp 26680 792 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:39:33,361 basehttp 26680 792 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:39:33,365 basehttp 26680 1768 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:39:33,384 basehttp 26680 1768 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:40:05,794 basehttp 26680 1768 "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:40:09,482 basehttp 26680 1768 "POST /admin/core/dailyquiz/add/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:40:09,505 basehttp 26680 1768 "GET /admin/core/dailyquiz/add/ HTTP/1.1" 200 17979
+INFO 2025-10-03 19:40:09,522 basehttp 26680 1768 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:40:59,134 basehttp 26680 1768 "POST /admin/core/dailyquiz/add/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:40:59,154 basehttp 26680 1768 "GET /admin/core/dailyquiz/add/ HTTP/1.1" 200 17979
+INFO 2025-10-03 19:40:59,174 basehttp 26680 1768 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:42:01,556 basehttp 26680 1768 "POST /admin/core/dailyquiz/add/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:42:01,578 basehttp 26680 1768 "GET /admin/core/dailyquiz/add/ HTTP/1.1" 200 17979
+INFO 2025-10-03 19:42:01,595 basehttp 26680 1768 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,598 basehttp 26680 1768 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,605 basehttp 26680 792 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,605 basehttp 26680 18304 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,605 basehttp 26680 17228 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,606 basehttp 26680 1768 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,606 basehttp 26680 12028 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,613 basehttp 26680 18304 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,616 basehttp 26680 1768 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,617 basehttp 26680 17228 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,618 basehttp 26680 792 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,620 basehttp 26680 12028 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,621 basehttp 26680 18304 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,623 basehttp 26680 18304 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:01,623 basehttp 26680 5620 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:42:01,639 basehttp 26680 5620 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:42:29,890 basehttp 26680 5620 "POST /admin/core/dailyquiz/add/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:42:29,913 basehttp 26680 5620 "GET /admin/core/dailyquiz/add/ HTTP/1.1" 200 17979
+INFO 2025-10-03 19:42:29,936 basehttp 26680 5620 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:43:13,096 basehttp 26680 5620 "POST /admin/core/dailyquiz/add/ HTTP/1.1" 302 0
+INFO 2025-10-03 19:43:13,120 basehttp 26680 5620 "GET /admin/core/dailyquiz/ HTTP/1.1" 200 18479
+INFO 2025-10-03 19:43:13,134 basehttp 26680 5620 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-10-03 19:43:13,135 basehttp 26680 12028 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-10-03 19:43:13,140 basehttp 26680 5620 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-10-03 19:43:13,143 basehttp 26680 18304 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 19:43:21,634 autoreload 28608 21168 Watching for file changes with StatReloader
+INFO 2025-10-03 19:43:23,179 basehttp 28608 25560 "GET / HTTP/1.1" 200 12586
+INFO 2025-10-03 19:45:18,653 autoreload 29936 30420 Watching for file changes with StatReloader
+INFO 2025-10-03 19:45:20,440 basehttp 28608 30544 "GET / HTTP/1.1" 200 12586
+INFO 2025-10-03 19:45:31,119 basehttp 28608 30544 "GET /register.html HTTP/1.1" 200 22278
+WARNING 2025-10-03 19:45:31,149 log 28608 30544 Not Found: /css/styles.css
+WARNING 2025-10-03 19:45:31,150 basehttp 28608 30544 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 19:49:50,403 autoreload 18628 24932 Watching for file changes with StatReloader
+INFO 2025-10-03 19:49:52,897 basehttp 18628 26188 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-03 19:49:53,175 log 18628 26188 Not Found: /favicon.ico
+WARNING 2025-10-03 19:49:53,176 basehttp 18628 26188 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-03 19:56:37,509 basehttp 18628 2752 "GET /register.html HTTP/1.1" 200 22278
+WARNING 2025-10-03 19:56:37,535 log 18628 2752 Not Found: /css/styles.css
+WARNING 2025-10-03 19:56:37,535 basehttp 18628 2752 "GET /css/styles.css HTTP/1.1" 404 6725
+ERROR 2025-10-03 19:57:09,347 log 18628 2752 Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\core\views.py", line 304, in post
+    validate_password(password)
+    ^^^^^^^^^^^^^^^^^
+NameError: name 'validate_password' is not defined
+ERROR 2025-10-03 19:57:09,357 basehttp 18628 2752 "POST /api/auth/register/ HTTP/1.1" 500 101517
+ERROR 2025-10-03 19:57:35,817 log 18628 2752 Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\core\views.py", line 304, in post
+    validate_password(password)
+    ^^^^^^^^^^^^^^^^^
+NameError: name 'validate_password' is not defined
+ERROR 2025-10-03 19:57:35,830 basehttp 18628 2752 "POST /api/auth/register/ HTTP/1.1" 500 101515
+WARNING 2025-10-03 19:57:40,352 log 18628 2752 Not Found: /css/styles.css
+WARNING 2025-10-03 19:57:40,353 basehttp 18628 2752 "GET /css/styles.css HTTP/1.1" 404 6725
+WARNING 2025-10-03 19:57:40,374 log 18628 2752 Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-10-03 19:57:40,375 basehttp 18628 2752 "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6827
+ERROR 2025-10-03 19:57:44,632 log 18628 2752 Internal Server Error: /api/auth/register/
+Traceback (most recent call last):
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\Crack_It_1\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Crack_It_1\core\views.py", line 304, in post
+    validate_password(password)
+    ^^^^^^^^^^^^^^^^^
+NameError: name 'validate_password' is not defined
+ERROR 2025-10-03 19:57:44,641 basehttp 18628 2752 "POST /api/auth/register/ HTTP/1.1" 500 101536
+INFO 2025-10-03 19:59:37,768 autoreload 3692 20360 Watching for file changes with StatReloader
+INFO 2025-10-03 19:59:39,280 basehttp 3692 16048 "GET / HTTP/1.1" 200 12586
+INFO 2025-10-03 19:59:57,170 basehttp 3692 16048 "GET /register.html HTTP/1.1" 200 22278
+WARNING 2025-10-03 19:59:57,204 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 19:59:57,205 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:00:27,717 basehttp 3692 16048 "POST /api/auth/register/ HTTP/1.1" 201 41
+INFO 2025-10-03 20:00:29,536 basehttp 3692 16048 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-03 20:00:29,558 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:00:29,558 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:00:35,211 basehttp 3692 16048 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-03 20:00:36,429 basehttp 3692 16048 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:02:08,927 basehttp 3692 16048 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:02:10,875 basehttp 3692 16048 "GET /syllabus.html HTTP/1.1" 200 20292
+WARNING 2025-10-03 20:02:10,901 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:02:10,901 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:02:10,922 basehttp 3692 16048 "GET /api/syllabus/ HTTP/1.1" 200 22142
+INFO 2025-10-03 20:03:30,549 basehttp 3692 16048 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:04:19,542 basehttp 3692 16048 "GET /syllabus.html HTTP/1.1" 200 20292
+WARNING 2025-10-03 20:04:19,570 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:04:19,570 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:04:19,596 basehttp 3692 16048 "GET /api/syllabus/ HTTP/1.1" 200 22142
+INFO 2025-10-03 20:04:54,637 basehttp 3692 16048 "GET /media/syllabus_pdfs/Class_6_Tamil_Tamil_Medium-Term_1-2024_Edition-www.tntextbooks.in.pdf HTTP/1.1" 200 49021216
+INFO 2025-10-03 20:06:04,327 basehttp 3692 16048 "GET /media/syllabus_pdfs/Class_7_English_English_Medium-Term_2-2024_Edition-www.tntextbooks.in.pdf HTTP/1.1" 200 13354298
+INFO 2025-10-03 20:06:20,824 basehttp 3692 16048 "GET /previouspaper.html HTTP/1.1" 200 17361
+WARNING 2025-10-03 20:06:20,851 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:06:20,852 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:06:20,871 basehttp 3692 16048 "GET /api/previous-papers/ HTTP/1.1" 200 3182
+INFO 2025-10-03 20:06:38,381 basehttp 3692 16048 "GET /media/papers/Gr-I-Mains-2017-Paper-1-Final-1.pdf HTTP/1.1" 200 673896
+INFO 2025-10-03 20:07:05,823 basehttp 3692 16048 "GET /syllabus.html HTTP/1.1" 200 20292
+WARNING 2025-10-03 20:07:05,847 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:07:05,848 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:07:05,869 basehttp 3692 16048 "GET /api/syllabus/ HTTP/1.1" 200 22142
+INFO 2025-10-03 20:07:28,976 basehttp 3692 16048 "GET /previouspaper.html HTTP/1.1" 200 17361
+WARNING 2025-10-03 20:07:29,006 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:07:29,007 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:07:29,022 basehttp 3692 16048 "GET /api/previous-papers/ HTTP/1.1" 200 3182
+INFO 2025-10-03 20:07:54,462 basehttp 3692 16048 "GET /media/papers/GS-Paper-4-Mains-2024-1.pdf HTTP/1.1" 200 455193
+INFO 2025-10-03 20:08:59,903 basehttp 3692 16048 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 20:08:59,933 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:08:59,935 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:08:59,960 basehttp 3692 16048 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-03 20:10:23,826 basehttp 3692 16048 "GET /previouspaper.html HTTP/1.1" 200 17361
+WARNING 2025-10-03 20:10:23,848 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:10:23,849 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:10:23,864 basehttp 3692 16048 "GET /api/previous-papers/ HTTP/1.1" 200 3182
+INFO 2025-10-03 20:10:29,408 basehttp 3692 16048 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 20:10:29,430 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:10:29,431 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:10:29,446 basehttp 3692 16048 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-03 20:10:49,218 basehttp 3692 16048 "GET /previouspaper.html HTTP/1.1" 200 17361
+WARNING 2025-10-03 20:10:49,240 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:10:49,240 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:10:49,257 basehttp 3692 16048 "GET /api/previous-papers/ HTTP/1.1" 200 3182
+INFO 2025-10-03 20:11:08,964 basehttp 3692 16048 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 20:11:08,987 log 3692 16048 Not Found: /css/styles.css
+WARNING 2025-10-03 20:11:08,988 basehttp 3692 16048 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:11:09,005 basehttp 3692 16048 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-03 20:12:47,040 autoreload 24932 21328 Watching for file changes with StatReloader
+INFO 2025-10-03 20:12:49,094 basehttp 24932 13672 "GET / HTTP/1.1" 200 12586
+INFO 2025-10-03 20:12:51,232 basehttp 24932 13672 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-03 20:12:51,261 log 24932 13672 Not Found: /css/styles.css
+WARNING 2025-10-03 20:12:51,261 basehttp 24932 13672 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:12:55,106 basehttp 24932 13672 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-03 20:12:56,323 basehttp 24932 13672 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:12:59,158 basehttp 24932 13672 "GET /admin/ HTTP/1.1" 200 16473
+INFO 2025-10-03 20:12:59,170 basehttp 24932 13672 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,170 basehttp 24932 28960 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,171 basehttp 24932 4148 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,175 basehttp 24932 4148 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,175 basehttp 24932 28960 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,175 basehttp 24932 13672 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,178 basehttp 24932 13672 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,184 basehttp 24932 4148 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,185 basehttp 24932 28960 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,185 basehttp 24932 13672 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 20:12:59,188 basehttp 24932 28960 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,571 basehttp 24932 28960 "GET /admin/core/keyword/ HTTP/1.1" 200 80196
+INFO 2025-10-03 20:13:01,585 basehttp 24932 28960 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,594 basehttp 24932 13672 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,595 basehttp 24932 30048 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,596 basehttp 24932 4148 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,596 basehttp 24932 13368 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,596 basehttp 24932 9656 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,599 basehttp 24932 13672 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,601 basehttp 24932 30048 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,603 basehttp 24932 4148 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,603 basehttp 24932 9656 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,605 basehttp 24932 28960 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-10-03 20:13:01,608 basehttp 24932 28960 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:01,628 basehttp 24932 28960 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-10-03 20:13:27,195 basehttp 24932 28960 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 20:13:27,216 log 24932 28960 Not Found: /css/styles.css
+WARNING 2025-10-03 20:13:27,216 basehttp 24932 28960 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:13:27,544 basehttp 24932 28960 "GET /api/keywords/ HTTP/1.1" 200 64229
+WARNING 2025-10-03 20:13:28,637 log 24932 28960 Not Found: /favicon.ico
+WARNING 2025-10-03 20:13:28,638 basehttp 24932 28960 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-03 20:13:28,786 basehttp 24932 28960 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-03 20:13:28,822 basehttp 24932 28960 "GET /api/ai-chat-history/ HTTP/1.1" 200 708
+INFO 2025-10-03 20:13:33,036 basehttp 24932 28960 "DELETE /api/ai-chat-history/169/ HTTP/1.1" 204 16
+INFO 2025-10-03 20:13:33,048 basehttp 24932 9656 "GET /api/ai-chat-history/ HTTP/1.1" 200 334
+INFO 2025-10-03 20:13:35,089 basehttp 24932 9656 "DELETE /api/ai-chat-history/170/ HTTP/1.1" 204 16
+INFO 2025-10-03 20:13:35,102 basehttp 24932 4148 "GET /api/ai-chat-history/ HTTP/1.1" 200 2
+INFO 2025-10-03 20:13:40,206 autoreload 30272 20096 Watching for file changes with StatReloader
+INFO 2025-10-03 20:13:41,942 basehttp 30272 25464 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-03 20:13:42,165 log 30272 25464 Not Found: /favicon.ico
+WARNING 2025-10-03 20:13:42,167 basehttp 30272 25464 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-03 20:13:44,139 basehttp 30272 11764 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-03 20:13:44,171 log 30272 11764 Not Found: /css/styles.css
+WARNING 2025-10-03 20:13:44,173 basehttp 30272 11764 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:13:47,241 basehttp 30272 11764 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-03 20:13:48,465 basehttp 30272 11764 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:14:17,420 basehttp 30272 11764 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-03 20:14:17,444 log 30272 11764 Not Found: /css/styles.css
+WARNING 2025-10-03 20:14:17,445 basehttp 30272 11764 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:14:17,464 basehttp 30272 11764 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-03 20:15:17,488 basehttp 30272 11764 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:15:24,989 basehttp 30272 11764 "GET /interview.html HTTP/1.1" 200 19085
+INFO 2025-10-03 20:15:25,030 basehttp 30272 11764 "GET /api/interview-questions/ HTTP/1.1" 200 60486
+INFO 2025-10-03 20:17:15,623 basehttp 30272 11764 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:17:19,622 basehttp 30272 11764 "GET /formula.html HTTP/1.1" 200 76456
+WARNING 2025-10-03 20:17:19,640 basehttp 30272 11764 "GET /static/js/formula.js HTTP/1.1" 404 1853
+INFO 2025-10-03 20:18:31,849 basehttp 30272 14924 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-03 20:18:31,884 basehttp 30272 14924 "GET /api/ai-chat-history/ HTTP/1.1" 200 2
+INFO 2025-10-03 20:18:33,137 basehttp 30272 14924 "GET /formula.html HTTP/1.1" 200 76456
+WARNING 2025-10-03 20:18:33,153 basehttp 30272 14924 "GET /static/js/formula.js HTTP/1.1" 404 1853
+INFO 2025-10-03 20:23:16,274 basehttp 30272 27316 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:23:18,606 basehttp 30272 27316 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-03 20:23:18,634 basehttp 30272 27316 "GET /api/ai-chat-history/ HTTP/1.1" 200 2
+INFO 2025-10-03 20:23:24,690 basehttp 30272 27316 "POST /api/ai-chat/ HTTP/1.1" 200 199
+INFO 2025-10-03 20:23:24,709 basehttp 30272 27316 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:23:24,710 basehttp 30272 164 "GET /api/ai-chat-history/ HTTP/1.1" 200 428
+INFO 2025-10-03 20:23:32,984 basehttp 30272 164 "POST /api/ai-chat/ HTTP/1.1" 200 401
+INFO 2025-10-03 20:23:33,001 basehttp 30272 164 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:23:33,003 basehttp 30272 27316 "GET /api/ai-chat-history/ HTTP/1.1" 200 800
+INFO 2025-10-03 20:23:47,973 basehttp 30272 27316 "POST /api/ai-chat/ HTTP/1.1" 200 1843
+INFO 2025-10-03 20:23:47,990 basehttp 30272 27316 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:23:47,992 basehttp 30272 164 "GET /api/ai-chat-history/ HTTP/1.1" 200 4884
+INFO 2025-10-03 20:24:13,413 basehttp 30272 164 "POST /api/ai-chat/ HTTP/1.1" 200 1978
+INFO 2025-10-03 20:24:13,429 basehttp 30272 27316 "GET /api/ai-chat-history/ HTTP/1.1" 200 6866
+INFO 2025-10-03 20:24:13,431 basehttp 30272 164 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:24:30,463 basehttp 30272 164 "DELETE /api/ai-chat-history/171/ HTTP/1.1" 204 16
+INFO 2025-10-03 20:24:30,480 basehttp 30272 27316 "GET /api/ai-chat-history/ HTTP/1.1" 200 4484
+INFO 2025-10-03 20:24:33,523 basehttp 30272 27316 "DELETE /api/ai-chat-history/172/ HTTP/1.1" 204 16
+INFO 2025-10-03 20:24:33,536 basehttp 30272 19092 "GET /api/ai-chat-history/ HTTP/1.1" 200 4291
+INFO 2025-10-03 20:24:40,031 basehttp 30272 19092 "DELETE /api/ai-chat-history/174/ HTTP/1.1" 204 16
+INFO 2025-10-03 20:24:40,043 basehttp 30272 22520 "GET /api/ai-chat-history/ HTTP/1.1" 200 2435
+INFO 2025-10-03 20:24:41,960 basehttp 30272 22520 "DELETE /api/ai-chat-history/173/ HTTP/1.1" 204 16
+INFO 2025-10-03 20:24:41,973 basehttp 30272 29420 "GET /api/ai-chat-history/ HTTP/1.1" 200 2023
+INFO 2025-10-03 20:24:50,138 basehttp 30272 29420 "POST /api/ai-chat/ HTTP/1.1" 200 145
+INFO 2025-10-03 20:24:50,154 basehttp 30272 29420 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:24:50,155 basehttp 30272 22624 "GET /api/ai-chat-history/ HTTP/1.1" 200 2348
+INFO 2025-10-03 20:25:28,955 basehttp 30272 22624 "POST /api/ai-chat/ HTTP/1.1" 200 202
+INFO 2025-10-03 20:25:28,970 basehttp 30272 29420 "GET /api/ai-chat-history/ HTTP/1.1" 200 2513
+INFO 2025-10-03 20:25:28,970 basehttp 30272 22624 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:25:39,518 basehttp 30272 22624 "POST /api/ai-chat/ HTTP/1.1" 200 172
+INFO 2025-10-03 20:25:39,535 basehttp 30272 29420 "GET /api/ai-chat-history/ HTTP/1.1" 200 2859
+INFO 2025-10-03 20:25:39,535 basehttp 30272 22624 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:25:43,567 basehttp 30272 22624 "POST /api/ai-chat/ HTTP/1.1" 200 118
+INFO 2025-10-03 20:25:43,581 basehttp 30272 29420 "GET /api/ai-chat-history/ HTTP/1.1" 200 3121
+INFO 2025-10-03 20:25:43,584 basehttp 30272 22624 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:25:46,722 basehttp 30272 22624 "POST /api/ai-chat/ HTTP/1.1" 200 213
+INFO 2025-10-03 20:25:46,737 basehttp 30272 22624 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:25:46,739 basehttp 30272 29420 "GET /api/ai-chat-history/ HTTP/1.1" 200 3620
+INFO 2025-10-03 20:25:56,671 basehttp 30272 29420 "POST /api/ai-chat/ HTTP/1.1" 200 169
+INFO 2025-10-03 20:25:56,685 basehttp 30272 29420 "POST /api/ai-chat-history/ HTTP/1.1" 200 15
+INFO 2025-10-03 20:25:56,687 basehttp 30272 22624 "GET /api/ai-chat-history/ HTTP/1.1" 200 3940
+INFO 2025-10-03 20:26:05,699 basehttp 30272 22624 "GET /formula.html HTTP/1.1" 200 76456
+WARNING 2025-10-03 20:26:05,715 basehttp 30272 22624 "GET /static/js/formula.js HTTP/1.1" 404 1853
+INFO 2025-10-03 20:26:07,060 basehttp 30272 29420 "GET /dailyquiz.html HTTP/1.1" 200 35186
+INFO 2025-10-03 20:26:10,816 basehttp 30272 29420 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-03 20:26:10,839 basehttp 30272 29420 "GET /api/ai-chat-history/ HTTP/1.1" 200 3940
+INFO 2025-10-03 20:26:22,671 basehttp 30272 29420 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:26:25,279 basehttp 30272 29420 "GET /mocktest.html HTTP/1.1" 200 27476
+WARNING 2025-10-03 20:26:25,307 log 30272 29420 Not Found: /css/styles.css
+WARNING 2025-10-03 20:26:25,308 basehttp 30272 29420 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:26:25,331 basehttp 30272 29420 "GET /api/mock-tests/ HTTP/1.1" 200 77
+INFO 2025-10-03 20:26:34,255 basehttp 30272 29420 "GET /api/mock-tests/2/questions/ HTTP/1.1" 200 11462
+INFO 2025-10-03 20:28:04,723 basehttp 30272 29420 "POST /api/mock-tests/2/submit/ HTTP/1.1" 201 2231
+INFO 2025-10-03 20:28:42,463 basehttp 30272 29420 "GET /results.html HTTP/1.1" 200 22128
+WARNING 2025-10-03 20:28:42,487 log 30272 29420 Not Found: /css/styles.css
+WARNING 2025-10-03 20:28:42,488 basehttp 30272 29420 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:28:42,509 basehttp 30272 29420 "GET /api/user/test-attempts/ HTTP/1.1" 200 2233
+INFO 2025-10-03 20:28:51,640 basehttp 30272 29420 "GET /api/user/test-attempts/9/details/ HTTP/1.1" 200 13993
+INFO 2025-10-03 20:29:17,818 basehttp 30272 29420 "GET /mocktest.html HTTP/1.1" 200 27476
+WARNING 2025-10-03 20:29:17,842 log 30272 29420 Not Found: /css/styles.css
+WARNING 2025-10-03 20:29:17,842 basehttp 30272 29420 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:29:17,859 basehttp 30272 29420 "GET /api/mock-tests/ HTTP/1.1" 200 77
+INFO 2025-10-03 20:29:20,514 basehttp 30272 29420 "GET /results.html HTTP/1.1" 200 22128
+WARNING 2025-10-03 20:29:20,538 log 30272 29420 Not Found: /css/styles.css
+WARNING 2025-10-03 20:29:20,539 basehttp 30272 29420 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-03 20:29:20,559 basehttp 30272 29420 "GET /api/user/test-attempts/ HTTP/1.1" 200 2233
+INFO 2025-10-03 20:29:40,144 basehttp 30272 29420 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:29:48,765 basehttp 30272 29420 "GET /dailyquiz.html HTTP/1.1" 200 35186
+INFO 2025-10-03 20:30:14,526 basehttp 30272 29420 "POST /submit-daily-quiz/ HTTP/1.1" 200 130
+INFO 2025-10-03 20:30:21,892 basehttp 30272 29420 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-03 20:30:24,357 basehttp 30272 29420 "GET /dailyquiz.html HTTP/1.1" 200 35917
+INFO 2025-10-03 20:30:47,470 basehttp 30272 29420 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-06 10:40:05,214 autoreload 9792 32748 Watching for file changes with StatReloader
+INFO 2025-10-06 10:40:20,405 basehttp 9792 30036 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-06 10:40:20,653 log 9792 30036 Not Found: /favicon.ico
+WARNING 2025-10-06 10:40:20,654 basehttp 9792 30036 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-06 10:40:53,118 basehttp 9792 29848 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-06 10:40:53,145 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:40:53,145 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:40:55,893 basehttp 9792 29848 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-06 10:40:57,119 basehttp 9792 29848 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-06 10:41:13,732 basehttp 9792 29848 "GET /dailyquiz.html HTTP/1.1" 200 32741
+INFO 2025-10-06 10:41:13,747 basehttp 9792 29848 "GET /static/css/styles.css HTTP/1.1" 304 0
+INFO 2025-10-06 10:41:32,167 basehttp 9792 29848 "GET /syllabus.html HTTP/1.1" 200 20292
+WARNING 2025-10-06 10:41:32,201 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:32,202 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:32,237 basehttp 9792 29848 "GET /api/syllabus/ HTTP/1.1" 200 22142
+INFO 2025-10-06 10:41:33,445 basehttp 9792 29848 "GET /mocktest.html HTTP/1.1" 200 27476
+WARNING 2025-10-06 10:41:33,476 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:33,477 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:33,504 basehttp 9792 29848 "GET /api/mock-tests/ HTTP/1.1" 200 77
+INFO 2025-10-06 10:41:34,815 basehttp 9792 29848 "GET /results.html HTTP/1.1" 200 22128
+WARNING 2025-10-06 10:41:34,846 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:34,847 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:34,874 basehttp 9792 29848 "GET /api/user/test-attempts/ HTTP/1.1" 200 2233
+INFO 2025-10-06 10:41:35,768 basehttp 9792 29848 "GET /api/user/test-attempts/9/details/ HTTP/1.1" 200 13993
+INFO 2025-10-06 10:41:38,307 basehttp 9792 29848 "GET /mocktest.html HTTP/1.1" 200 27476
+WARNING 2025-10-06 10:41:38,336 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:38,336 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:38,353 basehttp 9792 29848 "GET /api/mock-tests/ HTTP/1.1" 200 77
+INFO 2025-10-06 10:41:39,303 basehttp 9792 29848 "GET /api/mock-tests/2/questions/ HTTP/1.1" 200 11462
+INFO 2025-10-06 10:41:43,497 basehttp 9792 29848 "GET /results.html HTTP/1.1" 200 22128
+WARNING 2025-10-06 10:41:43,528 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:43,529 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:43,555 basehttp 9792 29848 "GET /api/user/test-attempts/ HTTP/1.1" 200 2233
+INFO 2025-10-06 10:41:46,138 basehttp 9792 29848 "GET /previouspaper.html HTTP/1.1" 200 17361
+WARNING 2025-10-06 10:41:46,166 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:46,167 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:46,188 basehttp 9792 29848 "GET /api/previous-papers/ HTTP/1.1" 200 3182
+INFO 2025-10-06 10:41:47,157 basehttp 9792 29848 "GET /keywords.html HTTP/1.1" 200 19049
+WARNING 2025-10-06 10:41:47,185 log 9792 29848 Not Found: /css/styles.css
+WARNING 2025-10-06 10:41:47,186 basehttp 9792 29848 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-06 10:41:47,210 basehttp 9792 29848 "GET /api/keywords/ HTTP/1.1" 200 64229
+INFO 2025-10-06 10:41:48,302 basehttp 9792 29848 "GET /dailyquiz.html HTTP/1.1" 200 32741
+INFO 2025-10-06 10:41:55,496 basehttp 9792 29848 "GET /interview.html HTTP/1.1" 200 19085
+INFO 2025-10-06 10:41:55,549 basehttp 9792 29848 "GET /api/interview-questions/ HTTP/1.1" 200 60486
+INFO 2025-10-06 10:41:56,763 basehttp 9792 29848 "GET /formula.html HTTP/1.1" 200 76456
+WARNING 2025-10-06 10:41:56,786 basehttp 9792 29848 "GET /static/js/formula.js HTTP/1.1" 404 1853
+INFO 2025-10-06 10:41:59,234 basehttp 9792 1728 "GET /aichat.html HTTP/1.1" 200 24529
+INFO 2025-10-06 10:41:59,285 basehttp 9792 1728 "GET /api/ai-chat-history/ HTTP/1.1" 200 3940
+INFO 2025-10-06 11:02:02,183 autoreload 32288 26536 Watching for file changes with StatReloader
+INFO 2025-10-07 15:29:24,841 autoreload 18856 26748 Watching for file changes with StatReloader
+INFO 2025-10-07 15:29:26,550 basehttp 18856 17940 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-07 15:29:26,672 log 18856 17940 Not Found: /favicon.ico
+WARNING 2025-10-07 15:29:26,673 basehttp 18856 17940 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-07 15:31:16,439 basehttp 18856 17940 "GET / HTTP/1.1" 200 12586
+INFO 2025-10-07 15:31:18,566 basehttp 18856 17940 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-07 15:31:18,600 log 18856 17940 Not Found: /css/styles.css
+WARNING 2025-10-07 15:31:18,601 basehttp 18856 17940 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-07 15:31:27,566 basehttp 18856 23540 "GET / HTTP/1.1" 200 12586
+WARNING 2025-10-07 15:31:27,667 log 18856 23540 Not Found: /favicon.ico
+WARNING 2025-10-07 15:31:27,668 basehttp 18856 23540 "GET /favicon.ico HTTP/1.1" 404 6716
+INFO 2025-10-07 15:31:29,679 basehttp 18856 23540 "GET /login.html HTTP/1.1" 200 16071
+WARNING 2025-10-07 15:31:29,700 log 18856 23540 Not Found: /css/styles.css
+WARNING 2025-10-07 15:31:29,701 basehttp 18856 23540 "GET /css/styles.css HTTP/1.1" 404 6725
+INFO 2025-10-07 15:31:33,487 basehttp 18856 23540 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-07 15:31:34,710 basehttp 18856 23540 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-07 15:31:43,421 basehttp 18856 23540 "POST /api/auth/login/ HTTP/1.1" 200 29
+INFO 2025-10-07 15:31:44,645 basehttp 18856 23540 "GET /index.html HTTP/1.1" 200 19820
+INFO 2025-10-07 15:31:48,366 basehttp 18856 23540 "GET /admin/ HTTP/1.1" 200 16473
+INFO 2025-10-07 15:31:48,379 basehttp 18856 23540 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,379 basehttp 18856 11476 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,380 basehttp 18856 11496 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,385 basehttp 18856 11496 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,386 basehttp 18856 11476 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,386 basehttp 18856 23540 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,389 basehttp 18856 23540 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,398 basehttp 18856 23540 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,398 basehttp 18856 11476 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,398 basehttp 18856 11496 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2025-10-07 15:31:48,403 basehttp 18856 11496 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0

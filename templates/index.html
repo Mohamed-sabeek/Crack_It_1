@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crack_it - TNPSC Group 1 Preparation</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    /* Reset and base styles */
+    *, *::before, *::after { 
+      box-sizing: border-box; 
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f6f8fb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    /* Navbar - Mobile-first approach */
+    .navbar {
+      background: #0c62cf;
+      color: white;
+      padding: 0.75rem clamp(1rem, 4vw, 2rem);
+      box-shadow: 0 3px 12px rgba(44,114,225,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 60px;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      user-select: none;
+      font-weight: bold;
+      font-size: clamp(1rem, 2.5vw, 1.45rem);
+      gap: 0.5rem;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .logo-icon { 
+      font-size: clamp(1.2rem, 3vw, 2rem); 
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(0.25rem, 2vw, 1.25rem);
+      flex-wrap: wrap;
+      font-size: clamp(0.85rem, 2vw, 1.05rem);
+      font-weight: 500;
+      justify-content: center;
+      flex: 1;
+      max-width: 100%;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: clamp(0.4rem, 1.5vw, 0.7rem) clamp(0.6rem, 2vw, 1.125rem);
+      border-radius: 7px;
+      transition: background-color 0.2s ease;
+      cursor: pointer;
+      white-space: nowrap;
+      font-size: clamp(0.8rem, 1.8vw, 1rem);
+      text-align: center;
+    }
+
+    .nav-links a.active, 
+    .nav-links a:hover {
+      background: #1976f5;
+    }
+
+    /* Mobile Menu Styles */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .mobile-menu-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    
+    /* Mobile Sidebar Overlay */
+    .mobile-sidebar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1002;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .mobile-sidebar-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-sidebar {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 280px;
+      height: 100vh;
+      background: #0c62cf;
+      z-index: 1003;
+      transition: left 0.3s ease;
+      overflow-y: auto;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .mobile-sidebar.show {
+      left: 0;
+    }
+
+    .mobile-sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 20px;
+      background: #094ba3;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-sidebar-logo {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+
+    .mobile-sidebar-close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 5px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .mobile-sidebar-close:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-sidebar-nav {
+      padding: 20px 0;
+    }
+    .mobile-sidebar-nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-size: 1rem;
+      font-weight: 500;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      transition: background 0.18s;
+    }
+    .mobile-sidebar-nav a.active {
+      background: #1976f5;
+      border-left: 4px solid white;
+    }
+    .mobile-sidebar-nav a:hover {
+      background: #1976f5;
+    }
+
+    /* Hero section - fully responsive */
+    .hero {
+      background: linear-gradient(135deg, #3f72af 0%, #112d4e 100%);
+      padding: clamp(2rem, 8vw, 4rem) clamp(1rem, 4vw, 2rem) clamp(3rem, 10vw, 5rem);
+      color: #e3eaf5;
+      text-align: center;
+      border-bottom-left-radius: clamp(1.5rem, 5vw, 3rem);
+      border-bottom-right-radius: clamp(1.5rem, 5vw, 3rem);
+      box-shadow: 0 0 40px rgba(17,45,78,0.25);
+      user-select: none;
+    }
+
+    .hero .hero-container { 
+      max-width: min(800px, 90vw); 
+      margin: 0 auto; 
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 6vw, 3rem);
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      font-weight: 600;
+      opacity: 0.9;
+      margin: 0;
+    }
+
+    /* Features grid - responsive grid system */
+    .features.container {
+      max-width: min(1180px, 95vw);
+      margin: clamp(-30px, -5vw, -50px) auto clamp(3rem, 8vw, 5rem);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(280px, 90vw), 1fr));
+      gap: clamp(1rem, 3vw, 2rem);
+      padding: 0 clamp(0.5rem, 2vw, 1rem);
+      user-select: none;
+    }
+
+    .feature-card {
+      background: #fff;
+      border-radius: clamp(0.75rem, 2vw, 1rem);
+      padding: clamp(1.25rem, 3vw, 1.75rem);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: box-shadow 0.25s ease, transform 0.2s ease;
+      position: relative;
+      min-height: 250px;
+      will-change: transform, box-shadow;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+      transform: translateY(-6px);
+      z-index: 10;
+    }
+
+    .feature-card .feature-icon {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: clamp(0.75rem, 2vw, 1rem);
+      align-self: flex-start;
+    }
+
+    /* Icon colors */
+    .feature-icon.blue { color: #0566d9; }
+    .feature-icon.green { color: #2cb67d; }
+    .feature-icon.teal { color: #14a2b9; }
+    .feature-icon.yellow { color: #eab308; }
+    .feature-icon.red { color: #dc2626; }
+    .feature-icon.gray { color: #6b7280; }
+    .feature-icon.purple { color: #7e22ce; }
+
+    .feature-card h3 {
+      font-size: clamp(1.1rem, 3vw, 1.3rem);
+      font-weight: 700;
+      margin-bottom: clamp(0.5rem, 1.5vw, 0.65rem);
+      color: #134074;
+      user-select: text;
+      line-height: 1.3;
+    }
+
+    .feature-card p {
+      font-size: clamp(0.9rem, 2.2vw, 1rem);
+      color: #666;
+      margin-bottom: auto;
+      line-height: 1.5;
+      user-select: text;
+      flex-grow: 1;
+      padding-bottom: clamp(1rem, 3vw, 1.9rem);
+    }
+
+    .feature-card .btn {
+      align-self: stretch;
+      text-align: center;
+      border-radius: 30px;
+      padding: clamp(0.6rem, 2vw, 0.8rem) clamp(1rem, 3vw, 1.5rem);
+      font-size: clamp(0.9rem, 2.2vw, 1.05rem);
+      font-weight: 700;
+      cursor: pointer;
+      user-select: none;
+      border: 3px solid transparent;
+      transition: all 0.3s ease;
+      color: white;
+      margin-top: auto;
+      width: 100%;
+      max-width: 200px;
+      min-width: 120px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* Button color variations */
+    .btn.blue { background-color: #0566d9; border-color: #0566d9;}
+    .btn.blue:hover { background-color: #044eb2; border-color: #044eb2;}
+    .btn.green { background-color: #2cb67d; border-color: #2cb67d;}
+    .btn.green:hover { background-color: #218c5b; border-color: #218c5b;}
+    .btn.teal { background-color: #14a2b9; border-color: #14a2b9;}
+    .btn.teal:hover { background-color: #0e7d9e; border-color: #0e7d9e;}
+    .btn.yellow { background-color: #eab308; border-color: #eab308; color: #333;}
+    .btn.yellow:hover { background-color: #c59808; border-color: #c59808;}
+    .btn.red { background-color: #dc2626; border-color: #dc2626;}
+    .btn.red:hover { background-color: #9b1c1c; border-color: #9b1c1c;}
+    .btn.gray { background-color: #6b7280; border-color: #6b7280;}
+    .btn.gray:hover { background-color: #4b5160; border-color: #4b5160;}
+    .btn.purple { background-color: #7e22ce; border-color: #7e22ce;}
+    .btn.purple:hover { background-color: #5a189a; border-color: #5a189a;}
+
+    /* Footer */
+    footer {
+      background-color: #0c62cf;
+      color: #fff;
+      font-weight: 600;
+      font-size: clamp(0.8rem, 2vw, 0.9rem);
+      text-align: center;
+      padding: clamp(0.75rem, 2vw, 1rem) clamp(0.5rem, 2vw, 1rem);
+      user-select: none;
+      margin-top: auto;
+    }
+
+    /* Specific breakpoint adjustments */
+    
+    /* Large tablets and small desktops */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .navbar {
+        padding: 0.75rem 2rem;
+      }
+      
+      .features.container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+
+    /* Large desktops */
+    @media (min-width: 1200px) {
+      .features.container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+      }
+      
+      .feature-card {
+        min-height: 280px;
+      }
+    }
+
+    /* Ultra-wide screens */
+    @media (min-width: 1600px) {
+      .hero .hero-container {
+        max-width: 1000px;
+      }
+      
+      .features.container {
+        max-width: 1400px;
+      }
+    }
+
+    /* Mobile responsive adjustments */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+        margin-left: auto;
+      }
+      
+      .navbar {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+      .mobile-sidebar {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .navbar {
+        padding: 0.5rem 0.75rem;
+      }
+      
+      .hero {
+        padding: 1.5rem 0.75rem 2.5rem;
+      }
+      
+      .features.container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: -25px auto 2rem;
+      }
+    }
+
+    /* Landscape orientation for mobile devices */
+    @media (max-height: 500px) and (orientation: landscape) {
+      .hero {
+        padding: 1.5rem 1rem 2rem;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+
+    /* High DPI displays */
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .feature-card {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+      
+      .feature-card:hover {
+        box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+      }
+    }
+
+    /* Dark mode support */
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: white;
+        color: #e0e0e0;
+      }
+      
+      .feature-card {
+        background: white;
+        color: #e0e0e0;
+      }
+      
+      .feature-card h3 {
+        color: #4a90e2;
+      }
+      
+      .feature-card p {
+        color: #b0b0b0;
+      }
+    }
+
+    /* Accessibility improvements */
+    @media (prefers-reduced-motion: reduce) {
+      .feature-card,
+      .btn,
+      .nav-links a {
+        transition: none;
+      }
+      
+      .feature-card:hover {
+        transform: none;
+      }
+    }
+
+    /* Focus styles for keyboard navigation */
+    .nav-links a:focus,
+    .btn:focus,
+    .feature-card:focus {
+      outline: 3px solid #ffd700;
+      outline-offset: 2px;
+    }
+
+    .feature-card:focus {
+      box-shadow: 0 0 0 3px #ffd700, 0 10px 24px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo-area" aria-label="Navigate to homepage">
+      <span class="logo-icon">📘</span>
+      <span>Crack_it</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="syllabus.html">Syllabus</a>
+      <a href="mocktest.html">Mock Test</a>
+      <a href="results.html">Results</a>
+      <a href="previouspaper.html">Previous Papers</a>
+      <a href="keywords.html">Keywords</a>
+      <a href="dailyquiz.html">Daily Quiz</a>
+      <a href="interview.html">Interview Questions</a>
+      <a href="formula.html">Important Formulas</a>
+      <a href="aichat.html">AI Assistant</a>
+    </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+  
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="mobile-sidebar-header">
+      <div class="mobile-sidebar-logo">
+        <span class="logo-icon">📘</span>
+        <span>Crack_it</span>
+      </div>
+      <button class="mobile-sidebar-close" id="mobileSidebarClose" aria-label="Close menu">×</button>
+    </div>
+    <div class="mobile-sidebar-nav">
+      <a href="syllabus.html">Syllabus</a>
+      <a href="mocktest.html">Mock Test</a>
+      <a href="results.html">Results</a>
+      <a href="previouspaper.html">Previous Papers</a>
+      <a href="keywords.html">Keywords</a>
+      <a href="dailyquiz.html">Daily Quiz</a>
+      <a href="interview.html">Interview Questions</a>
+      <a href="formula.html">Important Formulas</a>
+      <a href="aichat.html">AI Assistant</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-container">
+      <h1>TNPSC Group 1 Preparation</h1>
+      <p>Your one-stop solution for exam success</p>
+    </div>
+  </section>
+
+  <section class="features container" aria-label="Main features">
+    <div class="feature-card" onclick="location.href='syllabus.html'" tabindex="0">
+      <i class="fas fa-list-ul feature-icon blue"></i>
+      <h3>Syllabus</h3>
+      <p>Official and updated syllabus for TNPSC exams.</p>
+      <button class="btn blue" onclick="location.href='syllabus.html';event.stopPropagation();">View Syllabus</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='mocktest.html'" tabindex="0">
+      <i class="fas fa-pen-nib feature-icon green"></i>
+      <h3>Mock Tests</h3>
+      <p>Simulate real exam experience with timed tests.</p>
+      <button class="btn green" onclick="location.href='mocktest.html';event.stopPropagation();">Start Test</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='previouspaper.html'" tabindex="0">
+      <i class="fas fa-file-alt feature-icon teal"></i>
+      <h3>Previous Papers</h3>
+      <p>Access past official solved question papers.</p>
+      <button class="btn teal" onclick="location.href='previouspaper.html';event.stopPropagation();">View Papers</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='results.html'" tabindex="0">
+      <i class="fas fa-chart-bar feature-icon yellow"></i>
+      <h3>Results</h3>
+      <p>Track and analyze your exam progress.</p>
+      <button class="btn yellow" onclick="location.href='results.html';event.stopPropagation();">View Results</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='keywords.html'" tabindex="0">
+      <i class="fas fa-key feature-icon red"></i>
+      <h3>Keywords</h3>
+      <p>Essential terms and explanations to remember.</p>
+      <button class="btn red" onclick="location.href='keywords.html';event.stopPropagation();">Explore Keywords</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='dailyquiz.html'" tabindex="0">
+      <i class="fas fa-question-circle feature-icon gray"></i>
+      <h3>Daily Quiz</h3>
+      <p>Practice with daily quiz questions.</p>
+      <button class="btn gray" onclick="location.href='dailyquiz.html';event.stopPropagation();">Take Quiz</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='interview.html'" tabindex="0">
+      <i class="fas fa-comments feature-icon purple"></i>
+      <h3>Interview Questions</h3>
+      <p>Prepare with commonly asked interview questions.</p>
+      <button class="btn purple" onclick="location.href='interview.html';event.stopPropagation();">View Questions</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='formula.html'" tabindex="0">
+      <i class="fas fa-calculator feature-icon blue"></i>
+      <h3>Important Formulas</h3>
+      <p>Browse important formulas easily.</p>
+      <button class="btn blue" onclick="location.href='formula.html';event.stopPropagation();">View Formulas</button>
+    </div>
+
+    <div class="feature-card" onclick="location.href='aichat.html'" tabindex="0">
+      <i class="fas fa-robot feature-icon green"></i>
+      <h3>AI Assistant</h3>
+      <p>Get help from our AI-powered assistant.</p>
+      <button class="btn green" onclick="location.href='aichat.html';event.stopPropagation();">Ask AI</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Crack_it. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile menu functions
+    function openMobileSidebar() {
+      document.getElementById('mobileSidebar').classList.add('show');
+      document.getElementById('mobileSidebarOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileSidebar() {
+      document.getElementById('mobileSidebar').classList.remove('show');
+      document.getElementById('mobileSidebarOverlay').classList.remove('show');
+      document.body.style.overflow = '';
+    }
+
+    // Mobile menu event listeners
+    document.getElementById('mobileMenuBtn').addEventListener('click', openMobileSidebar);
+    document.getElementById('mobileSidebarClose').addEventListener('click', closeMobileSidebar);
+    document.getElementById('mobileSidebarOverlay').addEventListener('click', closeMobileSidebar);
+
+    // Close sidebar when clicking nav links on mobile
+    document.querySelectorAll('.mobile-sidebar-nav a').forEach(link => {
+      link.addEventListener('click', closeMobileSidebar);
+    });
+
+    // Enhanced keyboard navigation
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.feature-card');
+      
+      cards.forEach(card => {
+        card.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+    });
+
+    // Touch event handling for better mobile interaction - optimized version
+    let touchStartY = 0;
+    let touchStartX = 0;
+    let isScrolling = false;
+
+    document.addEventListener('touchstart', function(e) {
+      touchStartY = e.touches[0].clientY;
+      touchStartX = e.touches[0].clientX;
+      isScrolling = false;
+    }, { passive: true });
+
+    document.addEventListener('touchmove', function(e) {
+      if (isScrolling) return;
+      
+      const touchY = e.touches[0].clientY;
+      const touchX = e.touches[0].clientX;
+      
+      if (Math.abs(touchY - touchStartY) > Math.abs(touchX - touchStartX)) {
+        isScrolling = true;
+      }
+    }, { passive: true });
+
+    // Optimized smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

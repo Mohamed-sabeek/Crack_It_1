@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Crack_it - Results</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: #f6f8fb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #0a1e5a;
+    }
+    .navbar {
+      background: #0c62cf;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 2vw;
+      height: 64px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      box-shadow: 0 3px 12px rgba(44,114,225,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10000;
+      width: 100%;
+      overflow-x: auto;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      user-select: none;
+      cursor: pointer;
+      color: white;
+      flex-shrink: 0;
+    }
+    .logo-icon {
+      font-size: 2rem;
+      margin-right: 5px;
+    }
+    .nav-links {
+      margin-left: 14px;
+      display: flex;
+      flex: 1;
+      gap: 8px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 7px;
+      font-size: 1.02rem;
+      transition: background 0.19s;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .nav-links a.active,
+    .nav-links a:hover,
+    .nav-links a:focus {
+      background: #1976f5;
+      outline: none;
+    }
+
+    /* Mobile Menu Button */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 8px;
+      margin-left: auto;
+    }
+
+    /* Mobile Sidebar */
+    .mobile-sidebar {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 280px;
+      height: 100vh;
+      background: #0c62cf;
+      z-index: 20000;
+      transition: left 0.3s ease;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-sidebar.open {
+      left: 0;
+    }
+
+    .mobile-sidebar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-sidebar-logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+    }
+
+    .mobile-sidebar-logo .logo-icon {
+      font-size: 2rem;
+      margin-right: 8px;
+    }
+
+    .mobile-sidebar-close {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 0;
+    }
+
+    .mobile-nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: background 0.2s;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-nav-links a.active,
+    .mobile-nav-links a:hover {
+      background: #1976f5;
+    }
+
+    /* Mobile Sidebar Overlay */
+    .mobile-sidebar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 15000;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-sidebar-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Mobile Responsive Styles */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+      }
+    }
+
+    main.container {
+      flex: 1;
+      max-width: 860px;
+      margin: 2rem auto 5rem auto;
+      width: 100%;
+      padding: 0 1rem;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+    }
+    #results.section {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(49, 69, 176, 0.08);
+      padding: 2rem 2rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+    }
+    #results h2 {
+      color: #1652cc;
+      font-size: 2.4rem;
+      letter-spacing: -1px;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      user-select: none;
+    }
+    .instructions-accordion {
+      width: 100%;
+      border-radius: 13px;
+      background: #f5faff;
+      box-shadow: 0 2px 12px rgba(5, 97, 252, 0.07);
+      margin-bottom: 2rem;
+    }
+    .instructions-header {
+      display: flex;
+      align-items: center;
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: #0561fc;
+      padding: 1rem 1rem;
+      cursor: pointer;
+      background: #e8f8ff;
+      border: none;
+      outline: none;
+      user-select: none;
+      transition: background 0.2s;
+    }
+    .instructions-header i {
+      margin-right: 0.6rem;
+      font-size: 1.3rem;
+      transition: transform 0.3s ease;
+    }
+    .instructions-header.open,
+    .instructions-header:focus,
+    .instructions-header:hover {
+      background: #d6eafe;
+    }
+    .instructions-header.open i {
+      transform: rotate(90deg);
+    }
+    .instructions-content {
+      display: none;
+      padding: 1.2rem 1.5rem;
+      font-size: 1rem;
+      color: #234;
+      background: #eaf4ff;
+      line-height: 1.46;
+      border-radius: 0 0 14px 14px;
+    }
+    .instructions-content.show {
+      display: block;
+      animation: fadeInDown 0.3s;
+    }
+    .instructions-content ul {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      padding-left: 1.2rem;
+    }
+    .instructions-content ul li {
+      margin-bottom: 0.6rem;
+    }
+    .instructions-summary {
+      margin-top: 8px;
+      color: #219653;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.04rem;
+    }
+    .instructions-summary i {
+      color: #219653;
+      font-size: 1.2rem;
+      margin-right: 0.32rem;
+    }
+    #results-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    .result-card {
+      background: #f9faff;
+      border-radius: 14px;
+      padding: 1.8rem 1.6rem;
+      box-shadow: 0 0 12px rgba(5, 97, 252, 0.1);
+      border-left: 6px solid #0561fc;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.7rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .result-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0a1e5a;
+      user-select: text;
+    }
+    .result-date {
+      font-size: 0.92rem;
+      color: #7a8aaf;
+      font-style: italic;
+      user-select: text;
+    }
+    .progress-bar-container {
+      background: #dbe3ff;
+      border-radius: 14px;
+      height: 12px;
+      width: 100%;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: #0561fc;
+      border-radius: inherit;
+      width: 0;
+      transition: width 0.6s ease-in-out;
+    }
+    .score-text {
+      font-weight: 600;
+      color: #1664f5;
+      font-size: 1rem;
+      user-select: text;
+    }
+    .view-details-btn {
+      align-self: flex-start;
+      padding: 0.35rem 0.75rem;
+      background-color: #0561fc;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      user-select: none;
+    }
+    .view-details-btn:hover,
+    .view-details-btn:focus {
+      background-color: #044bbd;
+      outline: none;
+    }
+    /* Modal Styles */
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100000;
+    }
+    .modal-backdrop.active {
+      display: flex;
+    }
+    .modal {
+      background: white;
+      border-radius: 12px;
+      max-width: 700px;
+      width: 90%;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 1.8rem 2rem 2.4rem;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+      position: relative;
+    }
+    .modal h3 {
+      margin-top: 0;
+      font-weight: 700;
+      color: #0549a4;
+    }
+    .modal .close-btn {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #0549a4;
+    }
+    .modal .summary {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    .modal .question-item {
+      margin-bottom: 1rem;
+      user-select: text;
+    }
+    .modal .question-text {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .modal .options-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 0.5rem;
+    }
+    .modal .options-list li {
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid transparent;
+    }
+    .modal .correct {
+      background-color: #d3f6d3;
+      border-color: #63b863;
+      font-weight: 700;
+    }
+    .modal .user-selected {
+      font-style: italic;
+      border-color: #387ef5;
+      background-color: #cee3fc;
+    }
+    @media (max-width: 600px) {
+      #results-content {
+        gap: 1rem;
+      }
+      .result-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    footer {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 0.25rem 0rem;
+      background: #0561fc;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 0.1rem;
+      font-size: 1rem;
+      z-index: 1000;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <div class="navbar" role="banner">
+    <div class="logo" onclick="location.href='index.html'" role="link" tabindex="0" aria-label="Navigate to home page">
+      <span class="logo-icon">📘</span>
+      <span>Crack_it</span>
+    </div>
+    <nav class="nav-links" role="navigation" aria-label="Primary Navigation">
+      <a href="syllabus.html">Syllabus</a>
+      <a href="mocktest.html">Mock Test</a>
+      <a href="results.html" class="active">Results</a>
+      <a href="previouspaper.html">Previous Papers</a>
+      <a href="keywords.html">Keywords</a>
+      <a href="dailyquiz.html">Daily Quiz</a>
+      <a href="interview.html">Interview Questions</a>
+      <a href="formula.html">Important Formulas</a>
+      <a href="aichat.html">Crack_it AI Assistant</a>
+    </nav>
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open navigation menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Sidebar -->
+  <div class="mobile-sidebar" id="mobileSidebar">
+    <div class="mobile-sidebar-header">
+      <div class="mobile-sidebar-logo" onclick="location.href='index.html'">
+        <span class="logo-icon">📘</span>
+        <span>Crack_it</span>
+      </div>
+      <button class="mobile-sidebar-close" id="mobileSidebarClose" aria-label="Close navigation menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <nav class="mobile-nav-links" role="navigation" aria-label="Mobile Navigation">
+      <a href="syllabus.html">Syllabus</a>
+      <a href="mocktest.html">Mock Test</a>
+      <a href="results.html" class="active">Results</a>
+      <a href="previouspaper.html">Previous Papers</a>
+      <a href="keywords.html">Keywords</a>
+      <a href="dailyquiz.html">Daily Quiz</a>
+      <a href="interview.html">Interview Questions</a>
+      <a href="formula.html">Important Formulas</a>
+      <a href="aichat.html">Crack_it AI Assistant</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="mobile-sidebar-overlay" id="mobileSidebarOverlay"></div>
+
+  <main class="container" role="main">
+    <section id="results" class="section" aria-label="User Test Results">
+      <h2>Results</h2>
+      <!-- Instructions Accordion below Results heading -->
+      <div class="instructions-accordion">
+        <div class="instructions-header" id="resultsInstructionsToggle" tabindex="0" role="button" aria-expanded="false" aria-controls="resultsInstructionsContent">
+          <i class="fas fa-chevron-right"></i> Result Analysis – Instructions
+        </div>
+        <div class="instructions-content" id="resultsInstructionsContent" tabindex="0" hidden>
+          <ul>
+            <li><b>Total &amp; Attempted Questions –</b> See how many you attempted. It shows your speed and confidence.</li>
+            <li><b>Correct &amp; Incorrect Answers –</b> Correct answers show your strong areas; wrong ones highlight where you need to improve.</li>
+            <li><b>Accuracy –</b> Your accuracy % tells how well you are answering. Aim for higher accuracy with practice.</li>
+            <li><b>Time Taken –</b> Check if you spent too much time on any section. Balance speed and accuracy.</li>
+            <li><b>Progress –</b> Compare with your past tests to track improvement and avoid repeating mistakes.</li>
+            <li><b>Focus Areas –</b> Use the result to know your weak subjects and plan more revision there.</li>
+          </ul>
+          <div class="instructions-summary">
+            <i class="fas fa-check-square" aria-hidden="true"></i>
+            <span>
+              <b>Remember:</b> The result is not just marks – it's a guide to improve and get exam-ready.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div id="results-content" tabindex="0" aria-live="polite" aria-relevant="additions">
+        <!-- Result cards will be generated dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for detailed test results -->
+  <div id="detail-modal-backdrop" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="detail-modal-title" tabindex="-1">
+    <div class="modal">
+      <button class="close-btn" aria-label="Close details">&times;</button>
+      <h3 id="detail-modal-title">Test Attempt Details</h3>
+      <div id="detail-modal-content">
+        <!-- Detailed attempt info rendered here -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Crack_it. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Mobile Sidebar Functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileSidebar = document.getElementById('mobileSidebar');
+      const mobileSidebarClose = document.getElementById('mobileSidebarClose');
+      const mobileSidebarOverlay = document.getElementById('mobileSidebarOverlay');
+
+      function openSidebar() {
+        mobileSidebar.classList.add('open');
+        mobileSidebarOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeSidebar() {
+        mobileSidebar.classList.remove('open');
+        mobileSidebarOverlay.classList.remove('show');
+        document.body.style.overflow = '';
+      }
+
+      mobileMenuBtn.addEventListener('click', openSidebar);
+      mobileSidebarClose.addEventListener('click', closeSidebar);
+      mobileSidebarOverlay.addEventListener('click', closeSidebar);
+
+      // Close sidebar when clicking on navigation links
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+      mobileNavLinks.forEach(link => {
+        link.addEventListener('click', closeSidebar);
+      });
+
+      // Handle escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileSidebar.classList.contains('open')) {
+          closeSidebar();
+        }
+      });
+    });
+
+    // Accordion for results instructions
+    document.addEventListener('DOMContentLoaded', () => {
+      const header = document.getElementById('resultsInstructionsToggle');
+      const content = document.getElementById('resultsInstructionsContent');
+      if(header && content){
+        header.addEventListener('click', () => {
+          const opened = content.classList.toggle('show');
+          content.hidden = !opened;
+          header.classList.toggle('open', opened);
+          header.setAttribute('aria-expanded', opened);
+        });
+        header.addEventListener('keydown', e => {
+          if(e.key === "Enter" || e.key === " "){
+            e.preventDefault();
+            header.click();
+          }
+        });
+      }
+    });
+
+    async function fetchResults() {
+      const container = document.getElementById('results-content');
+      try {
+        const res = await fetch('/api/user/test-attempts/', { credentials: 'include' });
+        if (!res.ok) throw new Error('Failed to fetch results');
+        const attempts = await res.json();
+
+        if (!attempts.length) {
+          container.innerHTML = '<p style="color:#f00;">No test attempts found.</p>';
+          return;
+        }
+
+        container.innerHTML = '';
+
+        attempts.forEach(item => {
+          const dateStr = item.taken_on || '';
+          const date = new Date(dateStr);
+          const formattedDate = date.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+
+          const scorePercent = item.score != null ? item.score : 0;
+          const testName = item.mock_test?.subject || item.test_name || "N/A";
+
+          const card = document.createElement('div');
+          card.className = 'result-card';
+          card.innerHTML = `
+            <div class="result-header">
+              <div class="result-title">${escapeHtml(testName)}</div>
+              <div class="result-date">Taken on ${formattedDate}</div>
+            </div>
+            <div class="progress-bar-container" role="progressbar" aria-valuenow="${scorePercent}" aria-valuemin="0" aria-valuemax="100" aria-label="Test score">
+              <div class="progress-bar-fill" style="width: ${scorePercent}%;"></div>
+            </div>
+            <div class="score-text">Score: ${scorePercent}%</div>
+            <button class="view-details-btn" aria-label="View details for ${escapeHtml(testName)}">View Details</button>
+          `;
+          container.appendChild(card);
+
+          card.querySelector('.view-details-btn').addEventListener('click', () => {
+            showDetailModal(item.id);
+          });
+        });
+      } catch (error) {
+        container.innerHTML = '<p style="color:#f00;">Error loading results, please try again.</p>';
+        console.error('Error fetching results:', error);
+      }
+    }
+
+    async function showDetailModal(attemptId) {
+      const modalBackdrop = document.getElementById('detail-modal-backdrop');
+      const modalContent = document.getElementById('detail-modal-content');
+      modalContent.innerHTML = '<p>Loading details...</p>';
+      modalBackdrop.classList.add('active');
+      modalBackdrop.focus();
+
+      try {
+        const res = await fetch(`/api/user/test-attempts/${attemptId}/details/`, { credentials: 'include' });
+        if (!res.ok) throw new Error('Failed to fetch attempt details');
+        const data = await res.json();
+
+        const totalQuestions = data.total_questions ?? 0;
+        const attended = data.attended_count ?? 0;
+        const correct = data.correct_count ?? 0;
+        const incorrect = data.incorrect_count ?? 0;
+
+        let html = `
+          <div class="summary">
+            Total Questions: ${totalQuestions} | Attempted: ${attended} | Correct: ${correct} | Incorrect: ${incorrect}
+          </div>
+        `;
+
+        if (data.questions.length === 0) {
+          html += '<p>No questions data available.</p>';
+        } else {
+          data.questions.forEach((q, idx) => {
+            html += `
+              <div class="question-item" aria-label="Question ${idx + 1}">
+                <div class="question-text">${escapeHtml(q.question_text)}</div>
+                <ul class="options-list">
+                  ${renderOption(q, 'A')}
+                  ${renderOption(q, 'B')}
+                  ${renderOption(q, 'C')}
+                  ${renderOption(q, 'D')}
+                </ul>
+              </div>
+            `;
+          });
+        }
+
+        modalContent.innerHTML = html;
+      } catch (err) {
+        modalContent.innerHTML = '<p style="color:#f00;">Failed to load details. Please try again later.</p>';
+        console.error('Error fetching attempt detail:', err);
+      }
+    }
+
+    function renderOption(q, optionKey) {
+      const optionText = q['option_' + optionKey.toLowerCase()] || '';
+      const userSelected = q.user_answer === optionKey;
+      const correct = q.correct_option === optionKey;
+      let classes = [];
+      if (correct) classes.push('correct');
+      if (userSelected) classes.push('user-selected');
+      return `<li class="${classes.join(' ')}">${optionKey}. ${escapeHtml(optionText)}</li>`;
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      return text.replace(/[&<>"']/g, function (m) {
+        switch (m) {
+          case '&': return '&amp;';
+          case '<': return '&lt;';
+          case '>': return '&gt;';
+          case '"': return '&quot;';
+          case "'": return '&#039;';
+          default: return m;
+        }
+      });
+    }
+
+    document.querySelector('.close-btn').addEventListener('click', closeModal);
+    document.getElementById('detail-modal-backdrop').addEventListener('click', (e) => {
+      if (e.target === e.currentTarget) closeModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    function closeModal() {
+      const modalBackdrop = document.getElementById('detail-modal-backdrop');
+      modalBackdrop.classList.remove('active');
+      modalBackdrop.blur();
+    }
+
+    // Initialize on DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', fetchResults);
+  </script>
+</body>
+</html>
